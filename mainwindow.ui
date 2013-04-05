@@ -1,0 +1,826 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1144</width>
+    <height>861</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="2" column="0">
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="tab">
+       <attribute name="title">
+        <string>Overview</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_3">
+        <item row="3" column="0">
+         <layout class="QGridLayout" name="gridLayout_2">
+          <item row="5" column="0" colspan="2">
+           <widget class="QLabel" name="OCharacterName">
+            <property name="text">
+             <string>Name</string>
+            </property>
+           </widget>
+          </item>
+          <item row="7" column="0">
+           <widget class="QLabel" name="OCharacterRace">
+            <property name="text">
+             <string>Race</string>
+            </property>
+           </widget>
+          </item>
+          <item row="8" column="1">
+           <widget class="QLabel" name="OCharacterAge">
+            <property name="text">
+             <string>Age</string>
+            </property>
+           </widget>
+          </item>
+          <item row="8" column="0">
+           <widget class="QLabel" name="OCharacterSex">
+            <property name="text">
+             <string>Sex: </string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item row="7" column="0">
+         <widget class="QFrame" name="frame">
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_4">
+           <item row="0" column="0">
+            <layout class="QVBoxLayout" name="verticalLayout_2">
+             <item>
+              <widget class="QLabel" name="OSaveRef">
+               <property name="text">
+                <string>Ref</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="OSaveFort">
+               <property name="text">
+                <string>Fort</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="OSaveWill">
+               <property name="text">
+                <string>Will:</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="8" column="0" colspan="2">
+         <widget class="QFrame" name="frame_10">
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_15">
+           <item row="3" column="0" colspan="2">
+            <widget class="QLabel" name="label_45">
+             <property name="text">
+              <string>Attack Bonus:</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="0" colspan="2">
+            <widget class="QLabel" name="label_106">
+             <property name="text">
+              <string>Weapon:</string>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="2" colspan="2">
+            <widget class="QLabel" name="label_44">
+             <property name="text">
+              <string>Damage</string>
+             </property>
+            </widget>
+           </item>
+           <item row="4" column="0" colspan="4">
+            <widget class="QLabel" name="label_105">
+             <property name="text">
+              <string>Special:</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <widget class="QLabel" name="label_107">
+             <property name="text">
+              <string>Type:</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="1">
+            <widget class="QLabel" name="label_108">
+             <property name="text">
+              <string>Dage Type:</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="2">
+            <widget class="QLabel" name="label_129">
+             <property name="text">
+              <string>Size</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="3">
+            <widget class="QLabel" name="label_130">
+             <property name="text">
+              <string>Something Else</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="3">
+            <widget class="QPushButton" name="OEditMainWeapon">
+             <property name="text">
+              <string>Edit Weapon</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="6" column="0">
+         <widget class="QFrame" name="frame_2">
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_5">
+           <item row="0" column="0">
+            <layout class="QVBoxLayout" name="verticalLayout_5">
+             <item>
+              <widget class="QPushButton" name="OEditAbility">
+               <property name="text">
+                <string>Edit Ability</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="OAbilityStr">
+               <property name="text">
+                <string>Str: </string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="OAbilityDex">
+               <property name="text">
+                <string>Dex: </string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="OAbilityCon">
+               <property name="text">
+                <string>Con: </string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="OAbilityInt">
+               <property name="text">
+                <string>Int: </string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="OAbilityWis">
+               <property name="text">
+                <string>Wis: </string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="OAbilityCha">
+               <property name="text">
+                <string>Cha: </string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="6" column="1" rowspan="2">
+         <widget class="QFrame" name="frame_3">
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_10">
+           <item row="0" column="0">
+            <layout class="QVBoxLayout" name="verticalLayout_10">
+             <item>
+              <widget class="QPushButton" name="OEditCombatStats">
+               <property name="text">
+                <string>Edit General Combat Stats</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="OArmorClassTotal">
+               <property name="text">
+                <string>AC:</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="OCurrentHP">
+               <property name="text">
+                <string>HP</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="OTotalDamage">
+               <property name="text">
+                <string>Damage: </string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="OArmorClassTouch">
+               <property name="text">
+                <string>Touch AC</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="OArmorClassFlatFoot">
+               <property name="text">
+                <string>Flat foot AC: </string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="OBaseAttackBonus">
+               <property name="text">
+                <string>BBA</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="OBaseMeleeAttackBonus">
+               <property name="text">
+                <string>Melee Attack</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="OBaseRangedAttackBonus">
+               <property name="text">
+                <string>Ranged Attack:</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="5" column="0" colspan="2">
+         <layout class="QHBoxLayout" name="horizontalLayout_2">
+          <item>
+           <widget class="QLabel" name="OCharacterMaxHP">
+            <property name="text">
+             <string>Max HP:</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="OTotalXp">
+            <property name="text">
+             <string>Total XP</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="OTotalGold">
+            <property name="text">
+             <string>Total Gold:</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item row="9" column="0" colspan="2">
+         <widget class="QFrame" name="frame_11">
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_16">
+           <item row="3" column="0" colspan="2">
+            <widget class="QLabel" name="label_46">
+             <property name="text">
+              <string>Attack Bonus:</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="0" colspan="2">
+            <widget class="QLabel" name="label_131">
+             <property name="text">
+              <string>Weapon:</string>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="2" colspan="2">
+            <widget class="QLabel" name="label_132">
+             <property name="text">
+              <string>Damage</string>
+             </property>
+            </widget>
+           </item>
+           <item row="4" column="0" colspan="4">
+            <widget class="QLabel" name="label_133">
+             <property name="text">
+              <string>Special:</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <widget class="QLabel" name="label_134">
+             <property name="text">
+              <string>Type:</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="1">
+            <widget class="QLabel" name="label_135">
+             <property name="text">
+              <string>Dage Type:</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="2">
+            <widget class="QLabel" name="label_136">
+             <property name="text">
+              <string>Size</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="3">
+            <widget class="QLabel" name="label_137">
+             <property name="text">
+              <string>Something Else</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="3">
+            <widget class="QPushButton" name="OEditSecondaryWeapon">
+             <property name="text">
+              <string>Edit Weapon</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="10" column="1">
+         <spacer name="verticalSpacer_7">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="2" column="2" rowspan="9">
+         <widget class="QFrame" name="frame_4">
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_11">
+           <item row="0" column="0">
+            <layout class="QVBoxLayout" name="verticalLayout_11">
+             <item>
+              <widget class="QPushButton" name="OEditSkill">
+               <property name="text">
+                <string>Edit Skills</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="OSkillAcrobatics">
+               <property name="text">
+                <string>Acrobatics</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="OSkillAppraise">
+               <property name="text">
+                <string>Appraise</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="OSkillBluff">
+               <property name="text">
+                <string>Bluff</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="OSkillClimb">
+               <property name="text">
+                <string>Climb</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="OSkillCraft">
+               <property name="text">
+                <string>Craft</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="OSkillDiplomacy">
+               <property name="text">
+                <string>Diplomacy</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="OSkillDisableDevice">
+               <property name="text">
+                <string>Disable Device</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="OSkillDisguise">
+               <property name="text">
+                <string>Disguise</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="OSkillEscapeArtist">
+               <property name="text">
+                <string>Escape Artist</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="OSkillFly">
+               <property name="text">
+                <string>Fly</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="OSkillHandleAnimal">
+               <property name="text">
+                <string>HandleAnimal</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="OSkillHeal">
+               <property name="text">
+                <string>Heal</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="OSkillIntimidate">
+               <property name="text">
+                <string>Intimidate</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="OSkillArcana">
+               <property name="text">
+                <string>Knowledge (Arcana)</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="OSkillDungeoneering">
+               <property name="text">
+                <string>Knowledge (Dungeoneering)</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="OSkillEngineering">
+               <property name="text">
+                <string>Knowledge (Engineering)</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="OSkillGeography">
+               <property name="text">
+                <string>Knowledge (Geography)</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="OSkillHistory">
+               <property name="text">
+                <string>Knowledge (History)</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="OSkillLocal">
+               <property name="text">
+                <string>Knowledge (Local)</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="OSkillNature">
+               <property name="text">
+                <string>Knowledge (Nature)</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="OSkillNobility">
+               <property name="text">
+                <string>Knowledge (Nobility)</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="OSkillPlanes">
+               <property name="text">
+                <string>Knowledge (Planes)</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="OSkillReligion">
+               <property name="text">
+                <string>Knowledge (Religion)</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="OSkillLinguistics">
+               <property name="text">
+                <string>Linguistics</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="OSkillPerception">
+               <property name="text">
+                <string>Perception</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="OSkillPerform">
+               <property name="text">
+                <string>Perform</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="OSkillProfession">
+               <property name="text">
+                <string>Profession</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="OSkillRide">
+               <property name="text">
+                <string>Ride</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="OSkillSenseMotive">
+               <property name="text">
+                <string>Sense Motive</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="OSkillSleightofHand">
+               <property name="text">
+                <string>Sleight of Hand</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="OSkillSpellcraft">
+               <property name="text">
+                <string>Spellcraft</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="OSkillStealth">
+               <property name="text">
+                <string>Stealth</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="OSkillSurvival">
+               <property name="text">
+                <string>Survival</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="OSkillSwim">
+               <property name="text">
+                <string>Swim</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="OSkillUseMagicDevice">
+               <property name="text">
+                <string>Use Magic Device</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="2" column="0">
+         <widget class="QPushButton" name="OEditGeneralInformation">
+          <property name="text">
+           <string>Edit General Information</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1" rowspan="2">
+         <layout class="QVBoxLayout" name="verticalLayout_3">
+          <item>
+           <widget class="QLabel" name="OCharacterWeight">
+            <property name="text">
+             <string>Weight</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="OCharacterHeight">
+            <property name="text">
+             <string>Height</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="OCharacterSize">
+            <property name="text">
+             <string>Size Catergory: </string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_2">
+       <attribute name="title">
+        <string>Tab 2</string>
+       </attribute>
+      </widget>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <spacer name="verticalSpacer_4">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>20</width>
+        <height>40</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1144</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuTest">
+    <property name="title">
+     <string>&amp;File</string>
+    </property>
+    <addaction name="actionOpen"/>
+    <addaction name="actionSave"/>
+    <addaction name="actionQuit"/>
+   </widget>
+   <widget class="QMenu" name="menuEdit">
+    <property name="title">
+     <string>&amp;Edit</string>
+    </property>
+    <addaction name="actionGame_System"/>
+   </widget>
+   <widget class="QMenu" name="menu_Help">
+    <property name="title">
+     <string>&amp;Help</string>
+    </property>
+   </widget>
+   <addaction name="menuTest"/>
+   <addaction name="menuEdit"/>
+   <addaction name="menu_Help"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionOpen">
+   <property name="text">
+    <string>Open</string>
+   </property>
+  </action>
+  <action name="actionSave">
+   <property name="text">
+    <string>Save</string>
+   </property>
+  </action>
+  <action name="actionQuit">
+   <property name="text">
+    <string>Quit</string>
+   </property>
+  </action>
+  <action name="actionGame_System">
+   <property name="text">
+    <string>Settings</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>actionQuit</sender>
+   <signal>activated()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>399</x>
+     <y>297</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

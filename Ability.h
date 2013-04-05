@@ -8,12 +8,11 @@ class Ability
     public:
 
     Ability();
-    void Ability::changeAbility(int nbChange, string bonusType); 
-    bool estVivant();
- 
+    void changeAbility(int nbChange, std::string bonusType); 
+    int getAbility(); 
     private:
 
-    int m_ability[5] 
+    int m_ability[6]; 
 };
  
 #endif
