@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>393</width>
-    <height>331</height>
+    <height>341</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -133,8 +133,6 @@
         </item>
        </layout>
        <zorder></zorder>
-       <zorder></zorder>
-       <zorder>label_13</zorder>
       </widget>
      </item>
      <item row="1" column="0">
@@ -192,7 +190,6 @@
         </item>
        </layout>
        <zorder></zorder>
-       <zorder></zorder>
       </widget>
      </item>
      <item row="1" column="1">
@@ -215,6 +212,13 @@
           </item>
           <item row="0" column="1">
            <widget class="QSpinBox" name="spinBox_2"/>
+          </item>
+          <item row="1" column="0">
+           <widget class="QLabel" name="label_13">
+            <property name="text">
+             <string>Total XP</string>
+            </property>
+           </widget>
           </item>
          </layout>
         </item>
